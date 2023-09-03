@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム文字列生成</title>
+    <link rel="stylesheet" href="../common/common_styles.css">
+    <link rel="stylesheet" href="random_string_generator.css">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <h1><a href="../index.html">ツールキット</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+                <li><a href="../random_string_generator/random_string_generator.html">ランダム文字列生成</a></li>
+                <li><a href="../random_word_output/random_word_output.html">ランダム単語出力</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>ランダム文字列生成ツール</h1>
+        <div class="container">
+            <label for="charCount">文字数（最大100文字）:</label>
+            <input type="number" id="charCount" min="1" max="100" value="10">
+            <br><br>
+            <button id="select-all-button">全て選択</button>
+            <button id="deselect-all-button">全て解除</button>
+            <br><br>
+            <input type="checkbox" id="includeUppercase" checked>
+            <label for="includeUppercase">大文字を含める</label>
+            <br><br>
+            <input type="checkbox" id="includeLowercase" checked>
+            <label for="includeLowercase">小文字を含める</label>
+            <br><br>
+            <input type="checkbox" id="includeNumbers" checked>
+            <label for="includeNumbers">数字を含める</label>
+            <br><br>
+            <input type="checkbox" id="includeSymbols" checked>
+            <label for="includeSymbols">記号を含める</label>
+            <br><br>
+
+            <button id="generate-button">ランダム文字列を生成</button>
+            <br><br>
+            <div class="random-string-box"><p id="random-string"></p></div>
+            <br>
+            <button id="copy-button">コピー</button>
+
+        </div>
+        <footer>
+            <p>&copy; 2023 ランダム文字列ツール</p>
+        </footer>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>&copy; 2023 ツールキット. すべての権利が保持されています。</p>
+    </footer>
+    <script src="random_string_generator.js"></script>
+</body>
+
+</html>

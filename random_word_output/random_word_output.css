@@ -1,0 +1,24 @@
+
+/* Styles for the language selection checkboxes */
+.language-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+    .language-checkboxes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .language-checkboxes input,
+    .language-checkboxes label {
+        display: inline-block;
+        margin: 5px 0;
+    }
+}
